@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/getName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+       >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/getPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_below="@+id/getName"
+        android:layout_marginTop="30dp"
+
+       ></TextView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@color/teal_200"
+        android:text="2ns Activity"
+        android:gravity="center"></TextView>
+
+
+
+
+
+
+</RelativeLayout>

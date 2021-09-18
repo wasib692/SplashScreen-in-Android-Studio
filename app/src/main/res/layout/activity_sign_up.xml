@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signUp"
+    android:background="#031B2E">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/top"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/bungee"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="WELCOME,HERE!"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="450dp"
+            android:layout_below="@+id/top"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gradient"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="50dp">
+
+            <EditText
+                android:id="@+id/sign_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/user_name"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/sign_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_username"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#031B2E"
+                android:hint="Gmail"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/sign_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_gmail"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:drawableTint="#031B2E"
+                android:hint="Phone No"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/sign_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_phone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/sign_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#031B2E"
+                android:fontFamily="@font/bungee"
+                android:text="SignUp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/sign_btn"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/already_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Already have an account?" />
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/already_login"
+                    android:clickable="true"
+                    android:fontFamily="@font/bungee"
+                    android:includeFontPadding="false"
+                    android:minHeight="48dp"
+                    android:text="Login"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
